@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de ração</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    
+    <main id="conteudo">
+        <section id="img">
+            <img src="assets/images/undraw_dog_c7i6.svg" alt="Imagem do cachorro">
+            <img src="assets/images/undraw_cat_epte.svg" alt="Imagem do gato">
+        </section>
+
+        <section id="calculadora">
+            <form id="form">
+                <h1 id="titulo">Calculadora de Ração</h1>
+
+                <div class="input-box">
+                    <label for="racao">Peso da embalagem</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <input type="number" id="racao" required>
+                        <span>Kg</span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="consumo">Consumo diário</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-clock"></i>
+                        <input type="number" id="consumo" required>
+                        <span>Gr</span>
+                    </div>
+                </div>
+
+                <button id="calculate">Calcular</button>
+            </form>
+
+            <div id="infos">
+                <div id="descricao">
+                    <span id="resp"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
